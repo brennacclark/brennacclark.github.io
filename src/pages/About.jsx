@@ -1,6 +1,7 @@
 // src/pages/About.jsx
 
 import React from 'react';
+import '../App.css'
 import { Container, Row, Col } from 'react-bootstrap';
 
 const About = () => {
@@ -18,7 +19,7 @@ const About = () => {
   return (
     <div>
       {/* Hero Container */}
-      <div style={heroContainerStyle} className="text-center">
+      <div className="heroContainer text-center">
         <h1>About Me</h1>
         <p>Your unique story starts here.</p>
       </div>

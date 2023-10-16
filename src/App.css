@@ -1,0 +1,21 @@
+/* About.css */
+
+.container-full-height {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroContainer {
+  height: 30vh; /* Set the height to 30% of the viewport height */
+  background: linear-gradient(to right, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bodyContainer {
+  flex: 1;
+  text-align: center;
+}

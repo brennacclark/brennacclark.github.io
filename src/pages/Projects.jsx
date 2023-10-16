@@ -4,21 +4,11 @@ import React from 'react';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 
 const Projects = () => {
-  // Define the styles
-  const heroContainerStyle = {
-    background: 'linear-gradient(to right, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%)',
-    color: 'white',
-    padding: '150px 0',
-    position: 'relative',
-    zIndex: '1',
-    overflow: 'hidden',
-    boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.2)'
-  };
 
   return (
     <div>
       {/* Hero Container */}
-      <div style={heroContainerStyle} className="text-center">
+      <div className="heroContainer text-center">
         <h1>My Projects</h1>
         <p>Discover the work I'm proud of.</p>
       </div>
