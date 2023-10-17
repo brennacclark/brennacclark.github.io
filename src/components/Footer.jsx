@@ -8,14 +8,20 @@ const Footer = () => {
     position: 'fixed',
     bottom: '0',
     width: '100%',
-    zIndex: '1030'
+    height: '10vh',
+    zIndex: '1030',
+  };
+
+  const footerTextStyle = {
+    padding: '30px',
+    color: 'gray'
   };
 
   return (
     <footer className="bg-dark text-white mt-5" style={footerStyle}>
       <Container>
         <Row>
-          <Col className="text-center py-3">
+          <Col className="text-center" style={footerTextStyle}>
             Copyright &copy; {new Date().getFullYear()} - Brenna Clark
           </Col>
         </Row>
