@@ -1,7 +1,5 @@
 // src/pages/Contact.jsx
-
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 
 const Contact = () => {
 
@@ -14,46 +12,36 @@ const Contact = () => {
       </div>
 
       {/* Body Container */}
-      <Container className="my-5 contactBody">
-        <Row>
-          {/* Left Column for Text */}
-          <Col md={6}>
-            <h2>Contact Information</h2>
-            
-            {/* Email */}
-            <p>
-              <i className="material-icons">email</i> Email: <a href="mailto:example@example.com">example@example.com</a>
-            </p>
-            
-            {/* LinkedIn */}
-            <p>
-              <i className="material-icons">business</i> LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">yourprofile</a>
-            </p>
-            
-            {/* GitHub */}
-            <p>
-              <i className="material-icons">code</i> GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">yourusername</a>
-            </p>
+      <div className="contactBody"  style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'flex-start'}} >
 
-            {/* Resume Download Button */}
-                <a href="/BrennaClark_UX_2023.pdf" download style={{marginTop: '10px'}}>
+          <div className="svgContainer" >
+              <img src="/BrennaClark_UX_2023.svg" alt="Resume SVG" className="responsive-svg" style={{maxWidth: '100%'}}/>
+          </div>
+          
+          <div className="contactLinkContainer" style={{paddingTop: '10vh'}}>
+        
+            <div>{/* Email */}
+              <a href="mailto:brennacclark@gmail.com"><i className="material-icons">email</i> Email - brennacclark@gmail.com</a>
+            </div>
+            
+            <div> {/* LinkedIn */}
+              <a href="https://www.linkedin.com/in/brennacclark/" target="_blank" rel="noopener noreferrer"><i className="material-icons">business</i> LinkedIn - brennacclark</a>
+            </div>
+            
+            <div> {/* GitHub */}
+               <a href="https://github.com/brennacclark" target="_blank" rel="noopener noreferrer"><i className="material-icons">code</i> GitHub - brennacclark</a>
+            </div>
+
+            <div> {/* Resume Download Button */}
+              <a href="/BrennaClark_UX_2023.pdf" download style={{marginTop: '10px'}}>
                 <i className="material-icons">file_download</i> Download Resume
               </a>
-          </Col>
-          {/* Right Column for Resume SVG */}
-          <Col md={6} className="d-flex align-items-start justify-content-center">
-            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-              {/* Insert your 8/11 ratio SVG here */}
-              <img src="/BrennaClark_UX_2023.svg" alt="Resume SVG" className="responsive-svg" style={{maxWidth: '100%'}}/>
-
-
             </div>
-          </Col>
-          <Col>
+          </div>
 
-              </Col>
-        </Row>
-      </Container>
+          {/* Right Column for Resume SVG */}
+
+      </div>
     </div>
   );
 };
