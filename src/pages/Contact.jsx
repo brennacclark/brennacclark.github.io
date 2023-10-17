@@ -14,9 +14,10 @@ const Contact = () => {
       </div>
 
       {/* Body Container */}
-      <Container className="my-5">
+      <Container className="my-5 contactBody">
         <Row>
-          <Col md={{ span: 8, offset: 2 }} className="text-center">
+          {/* Left Column for Text */}
+          <Col md={6}>
             <h2>Contact Information</h2>
             
             {/* Email */}
@@ -33,18 +34,24 @@ const Contact = () => {
             <p>
               <i className="material-icons">code</i> GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">yourusername</a>
             </p>
-            
-            {/* Resume Download */}
-            <p>
-              <i className="material-icons">download</i> Resume: <a href="path/to/your/resume.pdf" download>Download</a>
-            </p>
-            
-            {/* Resume SVG Placeholder */}
-            <div>
-              {/* Insert your SVG here */}
-              <p>SVG of Resume will go here</p>
+
+            {/* Resume Download Button */}
+                <a href="/BrennaClark_UX_2023.pdf" download style={{marginTop: '10px'}}>
+                <i className="material-icons">file_download</i> Download Resume
+              </a>
+          </Col>
+          {/* Right Column for Resume SVG */}
+          <Col md={6} className="d-flex align-items-start justify-content-center">
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+              {/* Insert your 8/11 ratio SVG here */}
+              <img src="/BrennaClark_UX_2023.svg" alt="Resume SVG" className="responsive-svg" style={{maxWidth: '100%'}}/>
+
+
             </div>
           </Col>
+          <Col>
+
+              </Col>
         </Row>
       </Container>
     </div>

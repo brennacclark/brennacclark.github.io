@@ -12,7 +12,7 @@ const Home = () => {
             <h1>Hello, I'm Brenna Clark</h1>
           </div>
           <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p>UX Designer and Developer </p>
           </div>
           <div className="buttonContainerStyle">
             <Link to="/about">
@@ -22,7 +22,7 @@ const Home = () => {
             </Link>
             <Link to="/contact">
               <Button variant="secondary" className="buttonStyle">
-                Get in touch
+                Resume
               </Button>
             </Link>
           </div>
@@ -36,8 +36,9 @@ const Home = () => {
         <Row>
           <Col md={{ span: 8, offset: 2 }} className="text-center">
             <p>
-              This is your personal statement. You can describe your skills,
-              experience, and what you're passionate about.
+            Versatile UX Designer adept at blending a unique mix of technical proficiency and design expertise. Skilled in software development methodologies, technical writing, and product quality assurance, 
+            I am committed to delivering exceptional user experiences through intuitive design, empathy, 
+            and user-centered practices.
             </p>
           </Col>
         </Row>

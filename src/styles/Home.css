@@ -1,3 +1,8 @@
+.contactBody {
+  padding: 10px;
+  margin: 0 10vw;
+}
+
 .heroContainerStyle {
     display: flex;
     justify-content: space-between;
@@ -10,7 +15,7 @@
   }
   
   .profileImageStyle {
-    width: 40vw;
+    width: 30vw;
     aspect-ratio: 1 / 1;
     background-image: url('/BrennaLogo.png');
     background-size: cover;
@@ -22,7 +27,7 @@
   }
   
   .profileCircleStyle {
-    width: 35vw;
+    width: 25vw;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     background-size: cover;
@@ -63,7 +68,13 @@
   
   .imageContainerStyle {
     position: relative;
-    width: 500px;
+    width: 400px;
     aspect-ratio: 1 / 1;
   }
   
+
+  .text-center {
+    padding-top: 4vh;
+    font-size: larger;
+
+  }

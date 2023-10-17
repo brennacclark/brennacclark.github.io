@@ -21,23 +21,23 @@ const Projects = () => {
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="https://via.placeholder.com/800x400"
-                  alt="Project 1"
+                  src="/Pokedex.gif"
+                  alt="Pokedex Website"
                 />
                 <Carousel.Caption>
-                  <h3>Project 1</h3>
-                  <p>Description of the first project.</p>
+                  <h3>Pokedex!</h3>
+                  {/* <p>Description of the first project.</p> */}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="https://via.placeholder.com/800x400"
-                  alt="Project 2"
+                  src="/GameHavenCafe_Hero.png"
+                  alt="Game Haven Cafe App Mockups"
                 />
                 <Carousel.Caption>
-                  <h3>Project 2</h3>
-                  <p>Description of the second project.</p>
+                  <h3>Game Haven Cafe</h3>
+                  {/* <p>Description of the second project.</p> */}
                 </Carousel.Caption>
               </Carousel.Item>
               {/* Add more Carousel.Items as needed */}
