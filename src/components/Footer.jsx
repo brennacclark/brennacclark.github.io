@@ -14,7 +14,8 @@ const Footer = () => {
   };
 
   const footerTextStyle = {
-    padding: '5px',
+    fontSize: '1.8vh',
+    padding: '10px',
     color: 'gray'
   };
 
