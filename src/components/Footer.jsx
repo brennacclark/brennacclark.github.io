@@ -8,12 +8,13 @@ const Footer = () => {
     position: 'fixed',
     bottom: '0',
     width: '100%',
-    height: '8vh',
+    height: '4vh',
     zIndex: '1030',
+    backgroundColor: 'gray',
   };
 
   const footerTextStyle = {
-    padding: '20px',
+    padding: '5px',
     color: 'gray'
   };
 

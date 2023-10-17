@@ -8,11 +8,11 @@ import { Link } from 'react-router-dom';
 const Header = () => {
 
   const headerStyle = {
-    // Add header styles 
+    boxShadow: 'none',
   };
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" style={headerStyle} >
+    <Navbar expand="lg" style={headerStyle} >
       <Container>
         <Navbar.Brand as={Link} to="/">
           Brenna Clark
