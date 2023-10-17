@@ -19,9 +19,13 @@ const About = () => {
   return (
     <div className="main-content">
       {/* Hero Container */}
-      <div className="heroContainer text-center">
-        <h1>About Me</h1>
-        <p>Your unique story starts here.</p>
+      <div className="heroContainer text-center" style={{padding: '0vh 15vw'}}>
+        <p> 
+          Versatile UX Designer adept at blending a unique mix of technical proficiency and design expertise. 
+          Skilled in software development methodologies, technical writing, and product quality assurance, I am 
+          committed to delivering exceptional user experiences through intuitive design, empathy, and 
+          user-centered practices.
+        </p>
       </div>
 
       {/* Body Container */}
@@ -30,7 +34,7 @@ const About = () => {
           <Col md={{ span: 8, offset: 2 }} className="text-center">
             <h2>Who Am I?</h2>
             <p>
-              I am a web developer with a passion for creating stunning websites and applications that provide value to users.
+              I am a User Experience designer and developer with a passion for creating enjoyable and inutitive solutions. With mix of UX design and technical execution, I am comfortable at any point in the software life-cycle, from design to execution to maintenence.
             </p>
             <h2>My Skills</h2>
             <p>

@@ -10,7 +10,7 @@ const Projects = () => {
       {/* Hero Container */}
       <div className="heroContainer text-center">
         <h1>My Projects</h1>
-        <p>Discover the work I'm proud of.</p>
+        <p>Discover the work I'm proud of</p>
       </div>
 
       {/* Body Container */}
