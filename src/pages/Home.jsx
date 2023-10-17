@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import '../styles/Home.css';  // Importing the CSS file
+import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
@@ -15,12 +15,12 @@ const Home = () => {
             <p>UX Designer and Developer </p>
           </div>
           <div className="buttonContainerStyle">
-            <Link to="/about">
+            <Link to="about" spy={true} smooth={true}>
               <Button variant="secondary" className="buttonStyle">
                 My story
               </Button>
             </Link>
-            <Link to="/contact">
+            <Link to="contact" spy={true} smooth={true}>
               <Button variant="secondary" className="buttonStyle">
                 Resume
               </Button>
