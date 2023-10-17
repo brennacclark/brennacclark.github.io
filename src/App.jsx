@@ -4,30 +4,30 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Element } from 'react-scroll';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import Story from './pages/Story';
+
 
 function App() {
   return (
+    <div>
     <Router>
       <Header />
-      <div >
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/story" element={<Story />} />
-        </Routes>
-      </div>
-      <Footer />
-    </Router>
+        <div >
+          <Element name="home"><Home /></Element>
+          <Element name="about"><About /></Element>
+          <Element name="contact"><Contact /></Element>
+          <Element name="projects"><Projects /></Element>
+        </div>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
