@@ -2,11 +2,11 @@
 
 import React from 'react';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
+import '../App.css';
 
 const Projects = () => {
-
   return (
-    <div>
+    <div className="main-content">
       {/* Hero Container */}
       <div className="heroContainer text-center">
         <h1>My Projects</h1>
@@ -16,7 +16,7 @@ const Projects = () => {
       {/* Body Container */}
       <Container className="my-5">
         <Row>
-          <Col md={{ span: 10, offset: 1 }} className="text-center">
+          <Col xs={12} md={{ span: 10, offset: 1 }} className="text-center">
             <Carousel>
               <Carousel.Item>
                 <img

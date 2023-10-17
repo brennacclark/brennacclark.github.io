@@ -17,7 +17,7 @@ const About = () => {
   };
 
   return (
-    <div>
+    <div className="main-content">
       {/* Hero Container */}
       <div className="heroContainer text-center">
         <h1>About Me</h1>
