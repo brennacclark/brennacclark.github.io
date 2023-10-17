@@ -22,8 +22,8 @@ function App() {
         <div >
           <Element name="home"><Home /></Element>
           <Element name="about"><About /></Element>
-          <Element name="contact"><Contact /></Element>
           <Element name="projects"><Projects /></Element>
+          <Element name="contact"><Contact /></Element>
         </div>
         <Footer />
       </Router>
