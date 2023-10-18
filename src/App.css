@@ -1,5 +1,12 @@
 /* About.css */
 
+.App {
+  /* white to black linear noise gradient spanning from top to bottom */
+  background:
+  linear-gradient(45deg, rgba(255, 165, 79, 0.5), transparent), url('noise.svg');
+
+}
+
 .main-content {
   padding-bottom: 50px; /* or whatever value works for you */
   display: flex;

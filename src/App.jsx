@@ -16,7 +16,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div>
+    <div className="App">
     <Router>
       <Header />
         <div >
