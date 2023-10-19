@@ -4,7 +4,6 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { Element } from 'react-scroll';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -17,7 +16,6 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <div className="App">
-    <Router>
       <Header />
         <div >
           <Element name="home"><Home /></Element>
@@ -26,7 +24,6 @@ function App() {
           <Element name="contact"><Contact /></Element>
         </div>
         <Footer />
-      </Router>
     </div>
   );
 }
