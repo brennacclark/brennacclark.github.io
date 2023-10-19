@@ -10,6 +10,10 @@ html {
   linear-gradient(45deg, rgba(255, 165, 79, 0.5), transparent), url('noise.svg');
 }
 
+.content-wrapper {
+  margin-top: 10vh;
+}
+
 .brand-text {
   font-size: x-large;
   font-weight: bolder;
@@ -20,22 +24,20 @@ html {
 .main-content {
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 90vh;
   margin-top: 10vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
 }
 
 .home-bio{
   font-size: larger;
   font-weight: bold;
-  margin-top: 7vh;
+  margin-top: 7vh; /* how far text starts below portrait  */
 }
-
-.container-full-height {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 
 .bodyContainer {
   flex: 1;
@@ -49,21 +51,18 @@ html {
 }
 
 .project-image-container {
-  height: 40vh;
-  /* Set this to whatever fixed height you prefer */
+  height: 40vh;      /* Height of project images */
   overflow: hidden;
 }
 
 .project-image-container img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  /* This will make the image cover the entire container, cropping if necessary */
+  object-fit: cover; /* This will make the image cover the entire container, cropping if necessary */
 }
 
 /* App.css */
 .project-card {
-
   margin-top: 20px; 
   transition: 0.3s ease;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

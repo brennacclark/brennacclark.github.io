@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-        <div >
+        <div className='content-wrapper'>
           <Element name="home"><Home /></Element>
           <Element name="about"><About /></Element>
           <Element name="projects"><Projects /></Element>

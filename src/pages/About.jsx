@@ -1,47 +1,53 @@
-// src/pages/About.jsx
-
-import React from 'react';
-import '../App.css'
-import { Container, Row, Col } from 'react-bootstrap';
+import React from "react";
+import "../App.css";
 
 const About = () => {
-  // Define the styles
-  const heroContainerStyle = {
-    background: 'linear-gradient(to right, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%)',
-    color: 'white',
-    padding: '150px 0',
-    position: 'relative',
-    zIndex: '1',
-    overflow: 'hidden',
-    boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.2)'
-  };
-
   return (
-    <div className="main-content">
+    <div className="main-content about-content">
       {/* Body Container */}
-      <Container className="my-5">
-        <Row>
-          <Col md={{ span: 8, offset: 2 }} className="text-center">
-            <h2>Who Am I?</h2>
-              <p>
-              I am a User Experience designer and developer with a passion for creating enjoyable and inutitive solutions. With mix of UX design and technical execution, I am comfortable at any point in the software life-cycle, from design to execution to maintenence.
-              
-              
-              </p>
+      <div className="container my-5">
+        <div className="row">
+          <div className="col-md-10 offset-md-1 text-center">
+            <p>
+              I’m Brenna - thanks for stopping by my page. I’m a software
+              developer, Rhode Islander, animal lover, gamer, and most
+              importantly - human!
+            </p>
+            <p>
+              I find it satisfying and rewarding to create an experience that
+              helps the greatest number of people. I’m curious about how modern
+              tools and technology, such as AI, VR and AR, will continue to
+              integrate our everyday lives. What will the future of human-tech
+              relations look like? How can we create tools and experiences that
+              adapt to the needs of the customers, industry, and modern society?
+              And how can we continuously adapt in a responsible, ethical, and
+              equitable way?
+            </p>
             <h2>My Skills</h2>
-              <p>
-                I specialize in user experience, software quality, with 8+ years of experience as a software development generalist.
-              </p>
+            <p>
+              I specialize in user experience, software quality, with 8+ years
+              of experience as a software development generalist.
+            </p>
             <h2>My Journey</h2>
-              <p>
-                I started my journey in the world of quality assurance and test automation. I gained experience in performance and devops shipping continuous software. In recent years, I've had a focus on technical writing and knowlege engineering.  
-              </p>
-              <p>
-               I have always been interested in how we, as humans, interact with technology, the effect on its users, and society as a whole. While at IBM, I found that some of the most rewarding work I accomplished was helping design and implement internal tools to enhance the usability and productivity of my coworkers. I enjoyed making their lives easier and appreciated I was able to see the direct results. I wanted to take that motivation and use it to enhance my existing software skills.
-              </p>
-          </Col>
-        </Row>
-      </Container>
+            <p>
+              I started my journey in the world of quality assurance and test
+              automation. I gained experience in performance and devops shipping
+              continuous software. In recent years, I've had a focus on
+              technical writing and knowledge engineering.
+            </p>
+            <p>
+              I have always been interested in how we, as humans, interact with
+              technology, the effect on its users, and society as a whole. While
+              at IBM, I found that some of the most rewarding work I
+              accomplished was helping design and implement internal tools to
+              enhance the usability and productivity of my coworkers. I enjoyed
+              making their lives easier and appreciated I was able to see the
+              direct results. I wanted to take that motivation and use it to
+              enhance my existing software skills.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

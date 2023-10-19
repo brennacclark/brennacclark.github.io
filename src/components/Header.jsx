@@ -1,12 +1,11 @@
-// src/components/Header.jsx
-
-import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import { Link } from 'react-scroll';
+import React from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link } from "react-scroll";
+import "font-awesome/css/font-awesome.min.css";
 
 const Header = () => {
   const headerStyle = {
-    boxShadow: 'none',
+    boxShadow: "none",
   };
 
   return (
@@ -17,7 +16,12 @@ const Header = () => {
             Brenna Clark
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        {/* Custom Toggle Button */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <i className="fa fa-bars" style={{ color: "black" }}></i>
+        </Navbar.Toggle>
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link>
