@@ -7,11 +7,7 @@ html {
 .App {
   /* white to black linear noise gradient spanning from top to bottom */
   background:
-  linear-gradient(45deg, rgba(255, 165, 79, 0.5), transparent), url('noise.svg');
-}
-
-.content-wrapper {
-  margin-top: 10vh;
+  linear-gradient(0deg, rgba(255, 165, 79, 0.1), transparent), url('noise.svg');
 }
 
 .brand-text {
@@ -22,10 +18,7 @@ html {
 }
 
 .main-content {
-  display: flex;
-  flex-direction: column;
-  min-height: 90vh;
-  margin-top: 10vh;
+  padding-top: 20vh;
 }
 
 .container {
@@ -39,12 +32,6 @@ html {
   margin-top: 7vh; /* how far text starts below portrait  */
 }
 
-.bodyContainer {
-  flex: 1;
-  background-color: #228B22; /* tertiary color */
-  color: white;
-  text-align: center;
-}
 
 .vertical-timeline-element-subtitle{
   font-style: italic;
