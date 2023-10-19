@@ -1,47 +1,66 @@
 // src/pages/Projects.jsx
-
-import React from 'react';
-import { Container, Row, Col, Carousel } from 'react-bootstrap';
-import '../App.css';
+import React from "react";
+import { Container, Row, Col, Card, Badge } from "react-bootstrap";
+import "../App.css";
 
 const Projects = () => {
   return (
     <div className="main-content">
-      {/* Hero Container */}
       <div className="heroContainer text-center">
         <h1>My Projects</h1>
         <p>Discover the work I'm proud of</p>
       </div>
-
-      {/* Body Container */}
       <Container className="my-5">
-        <Row>
-          <Col xs={12} md={{ span: 10, offset: 1 }} className="text-center">
-            <Carousel>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="/Pokedex.gif"
+        <Row className="justify-content-center">
+          <Col xs={12} md={5} className="mb-4">
+            <Card className="project-card">
+              <div className="project-image-container">
+                <Card.Img
+                  variant="top"
+                  src="/Pokedex_Crop.gif"
                   alt="Pokedex Website"
                 />
-                <Carousel.Caption>
-                  <h3>Pokedex!</h3>
-                  {/* <p>Description of the first project.</p> */}
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
+              </div>
+              <Card.Body className="text-center">
+                <Card.Title>Pokedex!</Card.Title>
+                <Card.Text>
+                  <Badge variant="primary">React</Badge>
+                  <Badge variant="secondary">API</Badge>
+                </Card.Text>
+                <a
+                  href="https://github.com/brennacclark/pokedex"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Card.Link>View the GitHub Repository</Card.Link>
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} md={5} className="mb-4">
+            <Card className="project-card">
+              <div className="project-image-container">
+                <Card.Img
+                  variant="top"
                   src="/GameHavenCafe_Hero.png"
                   alt="Game Haven Cafe App Mockups"
                 />
-                <Carousel.Caption>
-                  <h3>Game Haven Cafe</h3>
-                  {/* <p>Description of the second project.</p> */}
-                </Carousel.Caption>
-              </Carousel.Item>
-              {/* Add more Carousel.Items as needed */}
-            </Carousel>
+              </div>
+              <Card.Body className="text-center">
+                <Card.Title>Game Haven Cafe</Card.Title>
+                <Card.Text>
+                  <Badge variant="primary">Figma</Badge>
+                  <Badge variant="secondary">Case Study</Badge>
+                </Card.Text>
+                <a
+                  href="https://www.figma.com/file/A8rjQqA55WHyVMLuC1WqB7/Game-Haven-Cafe?type=design&node-id=70%3A308&mode=design&t=eEfYACKKDiLZsCdT-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Card.Link>Browse the Figma Design File</Card.Link>
+                </a>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       </Container>
