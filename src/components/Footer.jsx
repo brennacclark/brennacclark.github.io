@@ -5,10 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
   const footerStyle = {
-    position: 'fixed',
-    bottom: '0',
     width: '100%',
-    height: '4vh',
     zIndex: '1030',
     backgroundColor: 'gray',
   };
