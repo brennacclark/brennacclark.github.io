@@ -5,7 +5,10 @@ const Contact = () => {
   return (
     <div className="main-content">
       {/* Hero Container */}
-      <div className="heroContainer text-center" style={{marginBottom: '-5vh'}}>
+      <div
+        className="heroContainer text-center"
+        style={{ marginBottom: "-5vh" }}
+      >
         <h1>Contact Me</h1>
         <p>Let's get in touch.</p>
       </div>
@@ -86,6 +89,14 @@ const Contact = () => {
           className="responsive-svg"
           style={{ maxWidth: "100%" }}
         />
+        <div className="download-div">
+          <a href="/BrennaClark_UX_2023.pdf" download>
+            <i
+              className="fa fa-download"
+              style={{ fontSize: "48px", margin: "0 15px" }}
+            ></i>
+          </a>
+        </div>
       </div>
     </div>
   );
