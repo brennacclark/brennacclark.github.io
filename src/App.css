@@ -60,8 +60,10 @@ html {
   width: 100%;  /* Take the full width of the card */
 }
 
-.project-card .card-body {
+.project-card .card-body .badge {
   flex-grow: 1;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 .project-card:hover {

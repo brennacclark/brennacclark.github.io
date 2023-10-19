@@ -12,7 +12,7 @@ const Projects = () => {
       <Container className="my-5">
         <Row className="justify-content-center">
           <Col xs={12} md={5} className="mb-4">
-            <Card className="project-card">
+            <Card bg="dark" className="project-card">
               <Card.Img
                 variant="top"
                 src="/Pokedex_Crop.gif"
@@ -20,23 +20,29 @@ const Projects = () => {
               />
               <Card.Body className="text-center">
                 <Card.Text>
-                  <Badge variant="primary">React</Badge>
-                  <Badge variant="secondary">API</Badge>
+                  <Badge bg="light" text="dark" className="me-2">
+                    React
+                  </Badge>{" "}
+                  {/* Added margin */}
+                  <Badge bg="light" text="dark">
+                    API
+                  </Badge>
                 </Card.Text>
                 <Card.Text>
                   <a
                     href="https://github.com/brennacclark/pokedex"
                     target="_blank"
                     rel="noopener noreferrer"
+                    style={{ color: "#FFB778", textDecoration: "none" }}
                   >
-                    <Card.Link>View the GitHub Repository</Card.Link>
+                    View the GitHub Repository
                   </a>
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
           <Col xs={12} md={5} className="mb-4">
-            <Card className="project-card">
+            <Card bg="dark" className="project-card">
               <Card.Img
                 variant="top"
                 src="/GameHavenCafe_Hero.png"
@@ -44,16 +50,22 @@ const Projects = () => {
               />
               <Card.Body className="text-center">
                 <Card.Text>
-                  <Badge variant="primary">Figma</Badge>
-                  <Badge variant="secondary">Case Study</Badge>
+                  <Badge bg="light" text="dark" className="me-2">
+                    Figma
+                  </Badge>{" "}
+                  {/* Added margin */}
+                  <Badge bg="light" text="dark">
+                    Case Study
+                  </Badge>
                 </Card.Text>
                 <Card.Text>
                   <a
                     href="https://www.figma.com/file/A8rjQqA55WHyVMLuC1WqB7/Game-Haven-Cafe?type=design&node-id=70%3A308&mode=design&t=eEfYACKKDiLZsCdT-1"
                     target="_blank"
                     rel="noopener noreferrer"
+                    style={{ color: "#FFB778", textDecoration: "none" }}
                   >
-                    <Card.Link>Browse the Figma Design File</Card.Link>
+                    Browse the Figma Design File
                   </a>
                 </Card.Text>
               </Card.Body>
