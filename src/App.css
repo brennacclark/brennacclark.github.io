@@ -46,6 +46,10 @@ html {
   text-align: center;
 }
 
+.vertical-timeline-element-subtitle{
+  font-style: italic;
+}
+
 .project-card {
   height: 100%;
   display: flex;

@@ -22,12 +22,12 @@ const CareerTimeline = () => {
           </div>
         }
       >
-        <h3 className="vertical-timeline-element-title">
+        <h4 className="vertical-timeline-element-title">
           Computer Science Peer Tutor
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          Endicott College, Beverly, MA
         </h4>
+        <h5 className="vertical-timeline-element-subtitle">
+          Endicott College, Beverly, MA
+        </h5>
         <p>
           Explained fundamental programming concepts to students, assisted
           individuals and small groups to complete programming assignments.
@@ -47,10 +47,10 @@ const CareerTimeline = () => {
           </div>
         }
       >
-        <h3 className="vertical-timeline-element-title">Sailbot Competition</h3>
-        <h4 className="vertical-timeline-element-subtitle">
+        <h4 className="vertical-timeline-element-title">Sailbot Competition</h4>
+        <h5 className="vertical-timeline-element-subtitle">
           Endicott College, Beverly, MA
-        </h4>
+        </h5>
         <p>
           Team of 10 designed and built an autonomous robotic sailboat and
           entered it in the 2013 Sailbot competition.
@@ -73,12 +73,12 @@ const CareerTimeline = () => {
           </div>
         }
       >
-        <h3 className="vertical-timeline-element-title">
+        <h4 className="vertical-timeline-element-title">
           Publication Management Software Quality Assurance Intern
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          Firebrand Technologies, Newburyport, MA
         </h4>
+        <h5 className="vertical-timeline-element-subtitle">
+          Firebrand Technologies, Newburyport, MA
+        </h5>
         <p>
           Developed manual tests to track software performance issues, tested
           usability and compatibility in new software.
@@ -98,12 +98,12 @@ const CareerTimeline = () => {
           </div>
         }
       >
-        <h3 className="vertical-timeline-element-title">
+        <h4 className="vertical-timeline-element-title">
           CT Scan Software Quality Assurance Intern
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          Neurologica Corporation, Danvers, MA
         </h4>
+        <h5 className="vertical-timeline-element-subtitle">
+          Neurologica Corporation, Danvers, MA
+        </h5>
         <p>
           Developed and executed automated tests for portable CT scan GUI,
           documented and tracked bugs, configured and imaged computers.
@@ -123,12 +123,12 @@ const CareerTimeline = () => {
           </div>
         }
       >
-        <h3 className="vertical-timeline-element-title">
+        <h4 className="vertical-timeline-element-title">
           IBM Rational ClearCase Software Development Intern
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          IBM, Littleton, MA
         </h4>
+        <h5 className="vertical-timeline-element-subtitle">
+          IBM, Littleton, MA
+        </h5>
         <p>
           Executed regression tests, organized results, located and debugged
           test defects, and gained experience in an agile development
@@ -149,12 +149,12 @@ const CareerTimeline = () => {
           </div>
         }
       >
-        <h3 className="vertical-timeline-element-title">
+        <h4 className="vertical-timeline-element-title">
           Bachelor of Science in Computer Science
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          Endicott College, Beverly, MA
         </h4>
+        <h5 className="vertical-timeline-element-subtitle">
+          Endicott College, Beverly, MA
+        </h5>
         <p>Minors in Applied Mathematics and Communications</p>
         <p>Concentration in Interactive Technologies</p>
         <p>
@@ -177,10 +177,10 @@ const CareerTimeline = () => {
           </div>
         }
       >
-        <h3 className="vertical-timeline-element-title">Software Engineer</h3>
-        <h4 className="vertical-timeline-element-subtitle">
+        <h4 className="vertical-timeline-element-title">Software Engineer</h4>
+        <h5 className="vertical-timeline-element-subtitle">
           IBM Order Management, Littleton, MA
-        </h4>
+        </h5>
         <p>
           Exhibited excellence in software engineering, improved database
           efficiency for OMS, reduced resources for wiki storage, and installed
@@ -202,12 +202,12 @@ const CareerTimeline = () => {
           </div>
         }
       >
-        <h3 className="vertical-timeline-element-title">
+        <h4 className="vertical-timeline-element-title">
           Outstanding Technical Achievement Award
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          IBM, Littleton, MA
         </h4>
+        <h5 className="vertical-timeline-element-subtitle">
+          IBM, Littleton, MA
+        </h5>
         <p>
           Led the test planning and execution to merge multiple version
           development streams into one central stream, resulting in streamlined
@@ -229,12 +229,12 @@ const CareerTimeline = () => {
           </div>
         }
       >
-        <h3 className="vertical-timeline-element-title">
+        <h4 className="vertical-timeline-element-title">
           Software Test Engineer
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          IBM Inventory Visibility Service, Littleton, MA
         </h4>
+        <h5 className="vertical-timeline-element-subtitle">
+          IBM Inventory Visibility Service, Littleton, MA
+        </h5>
         <p>
           Technical strategist in charge of planning and executing functional
           and regression testing. Positively contributed to customer experience.
@@ -255,15 +255,15 @@ const CareerTimeline = () => {
           </div>
         }
       >
-        <h3 className="vertical-timeline-element-title">
+        <h4 className="vertical-timeline-element-title">
           Google UX Design Certificate
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Google</h4>
+        </h4>
+        <h5 className="vertical-timeline-element-subtitle">Google</h5>
         <p>
           Learned the foundations of UX design, including empathizing with
           users, building wireframes and prototypes, and conducting research to
           test designs. Developed personas, user stories, and user journey maps.
-          Conducted usability studies and built a professional portfolio.
+          Conducted usability studies and completed several projects.
         </p>
       </VerticalTimelineElement>
     </VerticalTimeline>

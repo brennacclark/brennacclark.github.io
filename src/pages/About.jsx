@@ -26,12 +26,12 @@ const About = () => {
               customers, industry, and modern society? And how can we
               continuously adapt in a responsible, ethical, and equitable way?
             </p>
-            <h3 className="mt-5 mb-4">My Skills</h3>
+            {/* <h3 className="mt-5 mb-4">My Skills</h3>
             <p className="mb-4">
               I specialize in user experience, software quality, with 8+ years
               of experience as a software development generalist.
             </p>
-            <h3 className="mb-4">My Journey</h3>
+
             <p className="mb-4">
               I started my journey in the world of quality assurance and test
               automation. I gained experience in performance and devops shipping
@@ -47,10 +47,18 @@ const About = () => {
               making their lives easier and appreciated I was able to see the
               direct results. I wanted to take that motivation and use it to
               enhance my existing software skills.
-            </p>
+            </p> */}
           </div>
 
-          <CareerTimeline />
+          <div
+            style={{
+              marginTop: "10vh",
+              textAlign: "",
+            }}
+          >
+            <h3 style={{textAlign: "center"}} className="mb-4">My Journey</h3>
+            <CareerTimeline />
+          </div>
         </div>
       </div>
     </div>
