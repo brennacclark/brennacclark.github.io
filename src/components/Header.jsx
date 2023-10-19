@@ -13,7 +13,7 @@ const Header = () => {
     <Navbar expand="lg" style={headerStyle}>
       <Container>
         <Navbar.Brand>
-          <Link to="home" spy={true} smooth={true}>
+          <Link className="brand-text" to="home" spy={true} smooth={true}>
             Brenna Clark
           </Link>
         </Navbar.Brand>
