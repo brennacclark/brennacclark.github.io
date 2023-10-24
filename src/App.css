@@ -17,6 +17,11 @@ html {
   color: black;
 }
 
+.nav-item {
+  text-decoration: none;
+  color: black;
+}
+
 .main-content {
   padding-top: 20vh;
 }

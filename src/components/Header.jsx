@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from "react-scroll";
 import "font-awesome/css/font-awesome.min.css";
 
 const Header = () => {
+  const [expanded, setExpanded] = useState(false);
+
   const headerStyle = {
     boxShadow: "none",
     background:
@@ -14,34 +16,67 @@ const Header = () => {
     zIndex: 100,
   };
 
+  const closeNav = () => {
+    setExpanded(false);
+  };
+
   return (
-    <Navbar expand="lg" style={headerStyle}>
+    <Navbar
+      expanded={expanded}
+      onToggle={() => setExpanded(!expanded)}
+      expand="lg"
+      style={headerStyle}
+    >
       <Container>
         <Navbar.Brand>
-          <Link className="brand-text" to="home" spy={true} smooth={true}>
+          <Link
+            className="brand-text"
+            to="home"
+            spy={true}
+            smooth={true}
+            onClick={closeNav}
+          >
             Brenna Clark
           </Link>
         </Navbar.Brand>
-
-        {/* Custom Toggle Button */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          onClick={() => setExpanded(expanded ? false : "expanded")}
+        >
           <i className="fa fa-bars" style={{ color: "black" }}></i>
         </Navbar.Toggle>
-
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link>
-              <Link to="about" spy={true} smooth={true}>
+              <Link
+                className="nav-item"
+                to="about"
+                spy={true}
+                smooth={true}
+                onClick={closeNav}
+              >
                 About
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="projects" spy={true} smooth={true}>
+              <Link
+                className="nav-item"
+                to="projects"
+                spy={true}
+                smooth={true}
+                onClick={closeNav}
+              >
                 Projects
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="contact" spy={true} smooth={true}>
+              <Link
+                className="nav-item"
+                to="contact"
+                spy={true}
+                smooth={true}
+                onClick={closeNav}
+              >
                 Contact
               </Link>
             </Nav.Link>
