@@ -4,76 +4,81 @@
 }
 
 .heroContainerStyle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
-    padding: 0 15vw;
-  }
-  
-  .profileImageStyle {
-    width: 30vw;
-    aspect-ratio: 1 / 1;
-    background-image: url('/BrennaLogo.png');
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-  }
-  
-  .profileCircleStyle {
-    width: 25vw;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    border: 4px solid #FFD700;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  
-  .textSectionStyle {
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    padding: 0 20px;
-    color: black;
-  }
-  
-  .buttonContainerStyle {
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  .buttonStyle {
-    background-color: #333;
-    border: 1px solid #333;
-    padding: 1vh 2vw;
-    margin: 10px;
-    font-size: 2vh;
-    display: inline-block;
-    transition: 0.3s;
-    min-width: 80px;
-    min-height: 30px;
-    text-align: center;
-    white-space: nowrap;
-  }
-  
-  .imageContainerStyle {
-    position: relative;
-    width: 400px;
-    aspect-ratio: 1 / 1;
-  }
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 0 15vw;
+}
 
-  .text-center {
-    padding-top: 4vh;
-    font-size: larger;
+.imageContainerStyle {
+  position: relative;
+  width: 35vw;  /* Updated from 400px to 35vw */
+  aspect-ratio: 1 / 1;
+  box-sizing: border-box;  
+}
 
-  }
+.profileImageStyle {
+  width: 40vw;  /* Reduced from 30vw */
+  aspect-ratio: 1 / 1;
+  background-image: url('/BrennaLogo.png');
+  background-size:contain;
+  background-position: center;
+  position: absolute;
+  top: 50%;  
+  left: 50%;  
+  transform: translate(-50%, -50%);  
+  z-index: 2;
+  padding: 1vw;
+  box-sizing: border-box;  
+}
+
+.profileCircleStyle {
+  width: 35vw;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 4px solid #FFD700;
+  position: absolute;
+  top: 50%;  
+  left: 50%;  
+  transform: translate(-50%, -50%);  
+  z-index: 1;
+  box-sizing: border-box;  
+}
+
+
+.textSectionStyle {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  padding: 0 20px;
+  color: black;
+}
+
+.buttonContainerStyle {
+  margin: 10px;
+  padding: 10px;
+}
+
+.buttonStyle {
+  background-color: #333;
+  border: 1px solid #333;
+  padding: 1vh 2vw;
+  margin: 10px;
+  font-size: 2vh;
+  display: inline-block;
+  transition: 0.3s;
+  min-width: 80px;
+  min-height: 30px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.text-center {
+  padding-top: 4vh;
+  font-size: larger;
+}
