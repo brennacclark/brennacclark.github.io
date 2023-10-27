@@ -47,7 +47,7 @@ const Header = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link>
+            <Nav.Link as="div">
               <Link
                 className="nav-item"
                 to="about"
@@ -58,7 +58,7 @@ const Header = () => {
                 About
               </Link>
             </Nav.Link>
-            <Nav.Link>
+            <Nav.Link as="div">
               <Link
                 className="nav-item"
                 to="projects"
@@ -69,7 +69,7 @@ const Header = () => {
                 Projects
               </Link>
             </Nav.Link>
-            <Nav.Link>
+            <Nav.Link as="div">
               <Link
                 className="nav-item"
                 to="contact"
