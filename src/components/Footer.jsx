@@ -5,9 +5,12 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
   const footerStyle = {
-    width: '100%',
-    zIndex: '1030',
-    backgroundColor: 'gray',
+    position: "fixed",
+    bottom: "0%",
+    width: "100%",
+    height: "5vh",
+    backgroundColor: "darkgrey",
+    textAlign: "center",
   };
 
   const footerTextStyle = {
@@ -17,7 +20,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-dark text-white mt-5" style={footerStyle}>
+    <footer className="bg-dark text-white " style={footerStyle}>
       <Container>
         <Row>
           <Col className="text-center" style={footerTextStyle}>

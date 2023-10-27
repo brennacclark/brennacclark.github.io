@@ -1,8 +1,3 @@
-.contactBody {
-  padding: 10px;
-  margin: 0 10vw;
-}
-
 .heroContainerStyle {
   display: flex;
   justify-content: space-around;
@@ -10,7 +5,6 @@
   color: white;
   text-align: center;
   position: relative;
-  padding: 0 15vw;
 }
 
 .imageContainerStyle {
@@ -81,4 +75,9 @@
 .text-center {
   padding-top: 4vh;
   font-size: larger;
+}
+
+.contactBody {
+
+  margin: 0 10vw;
 }

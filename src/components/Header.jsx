@@ -28,17 +28,6 @@ const Header = () => {
       style={headerStyle}
     >
       <Container>
-        <Navbar.Brand>
-          <Link
-            className="brand-text"
-            to="home"
-            spy={true}
-            smooth={true}
-            onClick={closeNav}
-          >
-            Brenna Clark
-          </Link>
-        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           onClick={() => setExpanded(expanded ? false : "expanded")}

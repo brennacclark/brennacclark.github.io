@@ -11,19 +11,33 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Sidebar from './pages/Sidebar';
+import Test from './pages/Test';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-        <div className='content-wrapper'>
-          <Element name="home"><Home /></Element>
-          <Element name="about"><About /></Element>
-          <Element name="projects"><Projects /></Element>
-          <Element name="contact"><Contact /></Element>
-        </div>
+      <Sidebar />
+      <div className="content">
+        {/* <Header /> */}
+        <Element name="home">
+          <Home />
+        </Element>
+        <Element name="about">
+          <About />
+        </Element>
+        <Element name="projects">
+          <Projects />
+        </Element>
+        <Element name="contact">
+          <Contact />
+        </Element>
+      </div>
+
+      <div>
         <Footer />
+      </div>
     </div>
   );
 }

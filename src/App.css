@@ -15,6 +15,33 @@ body > div {
   /* white to black linear noise gradient spanning from top to bottom */
   background:
   linear-gradient(0deg, rgba(255, 165, 79, 0.1), transparent), url('noise.svg');
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+   flex-grow: 1;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 15vw;
+    height: 100vh;
+    padding: 1em;
+    white-space: nowrap; /* updated from text-wrap to white-space */
+}
+
+.content {
+    margin-left: 21vw;
+    padding: 1em;
+    overflow-y: auto;
+    height: calc(100vh - 5vh);
 }
 
 .brand-text {
@@ -30,7 +57,7 @@ body > div {
 }
 
 .main-content {
-  padding-top: 20vh;
+  padding-top: 10vh;
 }
 
 .container {
