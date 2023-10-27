@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+import React from 'react';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Element } from 'react-scroll';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Brenna Clark</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <Header />
+        <div className='content-wrapper'>
+          <Element name="home"><Home /></Element>
+          <Element name="about"><About /></Element>
+          <Element name="projects"><Projects /></Element>
+          <Element name="contact"><Contact /></Element>
+        </div>
+        <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
