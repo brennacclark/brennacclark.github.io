@@ -39,6 +39,7 @@ const Home = () => {
                     variant="secondary"
                     color="primary"
                     className="buttonStyle"
+                    value="story"
                   >
                     My story
                   </ToggleButton>
@@ -48,6 +49,7 @@ const Home = () => {
                     variant="secondary"
                     color="primary"
                     className="buttonStyle"
+                    value="resume"
                   >
                     Resume
                   </ToggleButton>
