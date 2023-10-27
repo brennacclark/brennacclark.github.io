@@ -1,7 +1,18 @@
 import React from "react";
 import "font-awesome/css/font-awesome.min.css";
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 const Contact = () => {
+  const [resume, setResume] = React.useState("SD");
+
+  const handleResume = (event, newResume) => {
+    setResume(newResume);
+  };
+
+  const svgFileName = `/BrennaClark_${resume}_Resume_2023.svg`;
+  const pdfFileName = `/BrennaClark_${resume}_Resume_2023.pdf`;
+
   return (
     <div className="main-content">
       {/* Hero Container */}
@@ -74,29 +85,53 @@ const Contact = () => {
         </div>
       </div>
 
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          margin: "1vw",
+        }}
+      >
+        <ToggleButtonGroup
+          value={resume}
+          exclusive
+          onChange={handleResume}
+          aria-label="Basic example"
+        >
+          <ToggleButton value="SD" variant="secondary">
+            Software Developer
+          </ToggleButton>
+          <ToggleButton value="UX" variant="secondary">
+            UX Designer
+          </ToggleButton>
+        </ToggleButtonGroup>
+        {/* Download Button */}
+        <a href={pdfFileName} download style={{ marginLeft: "20px" }}>
+          <i
+            className="fa fa-download"
+            style={{ fontSize: "48px", margin: "0 15px" }}
+          ></i>
+        </a>
+      </div>
+
       {/* Resume SVG */}
       <div
         className="svgContainer"
         style={{
+          position: "relative",
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
         }}
       >
         <img
-          src="/BrennaClark_UX_2023.svg"
+          src={svgFileName}
           alt="Resume SVG"
           className="responsive-svg"
           style={{ maxWidth: "100%" }}
         />
-        <div className="download-div">
-          <a href="/BrennaClark_UX_2023.pdf" download>
-            <i
-              className="fa fa-download"
-              style={{ fontSize: "48px", margin: "0 15px" }}
-            ></i>
-          </a>
-        </div>
       </div>
     </div>
   );
