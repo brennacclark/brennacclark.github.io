@@ -1,20 +1,21 @@
 /* About.css */
-html, body {
+html,
+body {
   width: 100%;
-  background:
-  linear-gradient(0deg, transparent, rgba(255, 165, 79, 0.1)), url('noise.svg');
+  background: linear-gradient(0deg, transparent, rgba(255, 165, 79, 0.1)),
+    url("/noise.svg");
 }
 
 body > div {
-    height: 100%;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .App {
   /* white to black linear noise gradient spanning from top to bottom */
-  background:
-  linear-gradient(0deg, rgba(255, 165, 79, 0.1), transparent), url('noise.svg');
+  background: linear-gradient(0deg, rgba(255, 165, 79, 0.1), transparent),
+    url("/noise.svg");
 }
 
 .brand-text {
@@ -38,14 +39,13 @@ body > div {
   max-width: 1140px;
 }
 
-.home-bio{
+.home-bio {
   font-size: larger;
   font-weight: bold;
   margin-top: 7vh; /* how far text starts below portrait  */
 }
 
-
-.vertical-timeline-element-subtitle{
+.vertical-timeline-element-subtitle {
   font-style: italic;
 }
 
@@ -57,10 +57,9 @@ body > div {
 }
 
 .project-card .card-img-top {
-
   object-fit: cover; /* Cover the whole width and height */
   height: 25vh; /* Set to your preferred height */
-  width: 100%;  /* Take the full width of the card */
+  width: 100%; /* Take the full width of the card */
 }
 
 .project-card .card-body .badge {
@@ -71,17 +70,21 @@ body > div {
 
 .project-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
-  
 }
 
 .custom-link {
-  color: #FFB778;
+  color: #ffb778;
   text-decoration: none;
 }
 
 .custom-link:hover {
-  color: #FFB778;
+  color: #ffb778;
   text-decoration: underline;
+}
+
+.noTextDecoration {
+  text-decoration: none;
+  color: gray;
 }
 
 /* Media query for resizing */
