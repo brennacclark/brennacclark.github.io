@@ -84,6 +84,12 @@ body > div {
   text-decoration: underline;
 }
 
+.noTextDecoration {
+  text-decoration: none;
+  color: gray;
+}
+
+
 /* Media query for resizing */
 @media screen and (max-width: 768px) {
   .heroContainer {
