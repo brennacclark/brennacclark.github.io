@@ -32,9 +32,9 @@ body > div {
   color: black;
 }
 
-.main-content {
-  padding-top: 20vh;
-}
+/* .main-content {
+  padding-top: 5vh;
+} */
 
 .container {
   width: 100%;
@@ -44,7 +44,6 @@ body > div {
 .home-bio {
   font-size: larger;
   font-weight: bold;
-  margin-top: 7vh; /* how far text starts below portrait  */
 }
 
 .vertical-timeline-element-subtitle {
