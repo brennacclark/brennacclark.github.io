@@ -1,7 +1,8 @@
 /* About.css */
 html, body {
-    width: 100%;
-
+  width: 100%;
+  background:
+  linear-gradient(0deg, transparent, rgba(255, 165, 79, 0.1)), url('noise.svg');
 }
 
 body > div {
@@ -58,7 +59,7 @@ body > div {
 .project-card .card-img-top {
 
   object-fit: cover; /* Cover the whole width and height */
-  height: 40vh; /* Set to your preferred height */
+  height: 25vh; /* Set to your preferred height */
   width: 100%;  /* Take the full width of the card */
 }
 
@@ -70,6 +71,17 @@ body > div {
 
 .project-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  
+}
+
+.custom-link {
+  color: #FFB778;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  color: #FFB778;
+  text-decoration: underline;
 }
 
 /* Media query for resizing */
