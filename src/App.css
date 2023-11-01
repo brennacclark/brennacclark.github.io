@@ -96,7 +96,7 @@ i:hover {
   color: gray;
 }
 
-/* Media query for resizing */
+/* Media query for resizing
 @media screen and (max-width: 768px) {
   .heroContainer {
     flex-direction: column;
@@ -107,4 +107,4 @@ i:hover {
   .profileImage {
     padding: 0;
   }
-}
+} */
