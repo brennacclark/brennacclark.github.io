@@ -23,7 +23,7 @@ const Projects = () => {
               />
               <Card.Body className="text-center">
                 <Card.Text>
-                  <Badge bg="success" text="dark" className="me-2">
+                  <Badge bg="light" text="dark" className="me-2">
                     Coming Soon!
                   </Badge>{" "}
                   <Badge bg="light" text="dark" className="me-2">
