@@ -30,7 +30,7 @@ const Home = () => {
               <h2>Hey, I'm Brenna!</h2>
             </div>
             <div>
-              <p>Striving to create enriching user experiences</p>
+              <p>All Things Tech</p>
             </div>
             <div className="buttonContainerStyle">
               <ThemeProvider theme={theme}>
@@ -69,11 +69,13 @@ const Home = () => {
           style={{ textAlign: "center", padding: "0vh 15vw" }}
         >
           <p>
-            I am a User Experience designer and developer with a passion for
-            creating enjoyable and inutitive solutions. With mix of UX design,
-            technical execution, and 8+ years of experience, I'm comfortable at
-            any point in the software lifecycle, from design to execution to
-            maintenence. Put me on your team!
+            I am a User Experience Designer and Developer with a passion for
+            creating solutions that are both enjoyable and intuitive. With a
+            diverse mix of UX design, technical execution, and AV technology
+            expertise, I bring over 8 years of experience to the table. I am
+            comfortable at any point in the software lifecycle, from design to
+            execution to maintenance, ensuring that all components and elements
+            seamlessly blend with user interactions and perform optimally.
           </p>
         </div>
       </div>
