@@ -46,4 +46,10 @@ React Vertical Timeline Component is a specialized library focused on delivering
 ✨💭✨ _Similar to React Scroll, I utilized the vertical timeline to depict my tech journey, aiming to make users feel as if they were joining me on this adventure._
 
 
+### [Playwright](https://playwright.dev)
+
+Playwright is a versatile end-to-end testing framework designed for testing modern web applications across all major browsers. It offers powerful features for browser automation, including support for headless testing, multi-page scenarios, and network interception, making it ideal for both UI and functional testing.
+
+✨💭✨ _I wanted to use a UI testing framework to verify functionality and quality before I push to deployment. I decided on Playwright because I may be using it in the future, and wanted to familiarize myself with how it works._ 
+
 ### Honorary Mentions to HTML, CSS, and pure Javascript for always being there ❤️
