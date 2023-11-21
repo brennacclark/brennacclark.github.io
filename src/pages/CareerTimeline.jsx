@@ -266,6 +266,32 @@ const CareerTimeline = () => {
           Conducted usability studies and completed several projects.
         </p>
       </VerticalTimelineElement>
+
+      {/* AV/IT Tech ▪ AV Leads */}
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2023-present"
+        iconStyle={{ background: "#C3CB98", color: "#fff" }}
+        icon={
+          <div
+            style={{ marginTop: "1vh", textAlign: "center", fontSize: "30px" }}
+          >
+            <i className="fa fa-briefcase"></i>
+          </div>
+        }
+      >
+        <h4 className="vertical-timeline-element-title">AV Technician</h4>
+        <h5 className="vertical-timeline-element-subtitle">
+          AV Leads, Boston, MA
+        </h5>
+        <p>
+          Install, configure, and maintain computer systems and AV equipment.
+          Communicate technical issues and status updates to clients or team
+          members. Recommend upgrades or changes to improve system performance
+          and user experience. Conduct regular system tests to ensure quality and
+          reliability.
+        </p>
+      </VerticalTimelineElement>
     </VerticalTimeline>
   );
 };

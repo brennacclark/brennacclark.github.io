@@ -27,7 +27,7 @@ const Footer = () => {
         </Row>
         <Row>
           <Col className="text-center" style={footerTextStyle}>
-            🌿🔮✨ Created with 💜 Love, 💡 Curiosity, 🌟 Magic, and ☕ Tea
+            🌿🔮✨ Created with 💡 Curiosity, 💜 Love, 🌟 Magic, and ☕ Tea
             ✨🔮🌿
           </Col>
         </Row>

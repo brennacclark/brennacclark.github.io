@@ -28,12 +28,39 @@ function App() {
         <Element name="home">
           <Home />
         </Element>
+        <img
+          src={"/spacer.svg"}
+          alt="Breaker"
+          style={{
+            width: "100%",
+            transform: "scale(0.5)",
+          }}
+        />
         <Element name="about">
           <About />
         </Element>
+
+        <img
+          src={"/spacer.svg"}
+          alt="Breaker"
+          style={{
+            width: "100%",
+            transform: "scale(0.5)",
+          }}
+        />
         <Element name="projects">
           <Projects />
         </Element>
+
+        <img
+          src={"/spacer.svg"}
+          alt="Breaker"
+          style={{
+            width: "100%",
+            transform: "scale(0.5)",
+          }}
+        />
+        
         <Element name="contact">
           <Contact />
         </Element>

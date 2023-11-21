@@ -23,7 +23,7 @@ const Projects = () => {
               />
               <Card.Body className="text-center">
                 <Card.Text>
-                  <Badge bg="success" text="dark" className="me-2">
+                  <Badge bg="light" text="dark" className="me-2">
                     Coming Soon!
                   </Badge>{" "}
                   <Badge bg="light" text="dark" className="me-2">
@@ -41,6 +41,38 @@ const Projects = () => {
                     className="custom-link"
                   >
                     View the GitHub Repository
+                  </a>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} md={5} className="mb-4">
+            <Card bg="dark" className="project-card text-white">
+              <Card.Header style={{ color: "#FFB778", textAlign: "center" }}>
+                <h4>Pizza Zine</h4>
+              </Card.Header>
+              <Card.Img
+                variant="top"
+                src="/pizza_zine_ss.png"
+                alt="Ricky Rainbow Beard's Pizza Zine"
+              />
+              <Card.Body className="text-center">
+                <Card.Text>
+                  <Badge bg="light" text="dark" className="me-2">
+                    Python / RenPy
+                  </Badge>{" "}
+                  <Badge bg="light" text="dark">
+                    Interactive
+                  </Badge>
+                </Card.Text>
+                <Card.Text>
+                  <a
+                    href="https://brennacclark.github.io/pizza_zine/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="custom-link"
+                  >
+                    Play the visual story
                   </a>
                 </Card.Text>
               </Card.Body>
