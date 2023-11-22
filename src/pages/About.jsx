@@ -4,7 +4,7 @@ import CareerTimeline from "./CareerTimeline";
 
 const About = () => {
   return (
-    <div className="main-content about-content">
+    <body className="main-content about-content">
       {/* Body Container */}
       <div className="container my-5">
         <div className="row">
@@ -56,12 +56,14 @@ const About = () => {
               textAlign: "",
             }}
           >
-            <h3 style={{textAlign: "center"}} className="mb-4">My Journey</h3>
+            <h3 style={{ textAlign: "center" }} className="mb-4">
+              My Journey
+            </h3>
             <CareerTimeline />
           </div>
         </div>
       </div>
-    </div>
+    </body>
   );
 };
 

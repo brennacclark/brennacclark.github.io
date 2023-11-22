@@ -23,7 +23,7 @@ const theme = createTheme({
 const Home = () => {
   return (
     <ThemeProvider theme={theme}>
-      <div className="main-content">
+      <body className="main-content">
         <div className="heroContainerStyle">
           <div className="textSectionStyle">
             <div>
@@ -78,7 +78,7 @@ const Home = () => {
             seamlessly blend with user interactions and perform optimally.
           </p>
         </div>
-      </div>
+      </body>
     </ThemeProvider>
   );
 };
