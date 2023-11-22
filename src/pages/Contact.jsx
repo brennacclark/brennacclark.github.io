@@ -14,7 +14,7 @@ const Contact = () => {
   const pdfFileName = `/BrennaClark_${resume}_Resume_2023.pdf`;
 
   return (
-    <body className="main-content">
+    <div className="main-content">
       {/* Hero Container */}
       <div
         className="heroContainer text-center"
@@ -133,7 +133,7 @@ const Contact = () => {
           style={{ maxWidth: "100%" }}
         />
       </div>
-    </body>
+    </div>
   );
 };
 

@@ -22,7 +22,7 @@ function App() {
   // }, []);
 
   return (
-    <body className="App">
+    <div className="App">
       <Header />
       <div className="content-wrapper">
         <Element name="home">
@@ -60,13 +60,13 @@ function App() {
             transform: "scale(0.5)",
           }}
         />
-
+        
         <Element name="contact">
           <Contact />
         </Element>
       </div>
       <Footer />
-    </body>
+    </div>
   );
 }
 
