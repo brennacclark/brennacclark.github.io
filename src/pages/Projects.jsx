@@ -4,7 +4,7 @@ import "../App.css";
 
 const Projects = () => {
   return (
-    <div className="main-content">
+    <main className="main-content">
       <div className="heroContainer text-center">
         <h1>My Projects</h1>
         <p>Discover the work I'm proud of</p>
@@ -183,7 +183,7 @@ const Projects = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </main>
   );
 };
 

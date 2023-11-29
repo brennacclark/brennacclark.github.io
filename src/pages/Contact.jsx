@@ -14,18 +14,18 @@ const Contact = () => {
   const pdfFileName = `/BrennaClark_${resume}_Resume_2023.pdf`;
 
   return (
-    <div className="main-content">
+    <main className="main-content">
       {/* Hero Container */}
-      <div
+      <section
         className="heroContainer text-center"
         style={{ marginBottom: "-5vh" }}
       >
         <h1>Contact Me</h1>
         <p>Let's get in touch.</p>
-      </div>
+      </section>
 
       {/* Body Container */}
-      <div
+      <section
         className="contactBody"
         style={{
           display: "flex",
@@ -83,9 +83,9 @@ const Contact = () => {
             </a>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div
+      <section
         style={{
           display: "flex",
           justifyContent: "center",
@@ -114,10 +114,10 @@ const Contact = () => {
             style={{ fontSize: "48px", margin: "0 15px" }}
           ></i>
         </a>
-      </div>
+      </section>
 
       {/* Resume SVG */}
-      <div
+      <section
         className="svgContainer"
         style={{
           position: "relative",
@@ -132,8 +132,8 @@ const Contact = () => {
           className="responsive-svg"
           style={{ maxWidth: "100%" }}
         />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
