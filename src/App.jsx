@@ -13,15 +13,14 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Spacer from "./components/Spacer";
 import ReactGA from "react-ga";
-import MainSection from "./components/MainSection";
 
 function App() {
-  // useEffect(() => {
-  //   // Initialize Google Analytics
-  //   ReactGA.initialize("G-W2V2DMTCDL");
-  //   // To report page view
-  //   ReactGA.pageview(window.location.pathname + window.location.search);
-  // }, []);
+  useEffect(() => {
+    // Initialize Google Analytics
+    ReactGA.initialize("G-QC9F3KYX72");
+    // To report page view
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <main className="App">
@@ -47,7 +46,6 @@ function App() {
           <Contact />
         </Element>
 
-        <MainSection />
       </section>
       <Footer />
     </main>
