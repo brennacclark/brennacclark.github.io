@@ -13,6 +13,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Spacer from "./components/Spacer";
 import ReactGA from "react-ga";
+import MainSection from "./components/MainSection";
 
 function App() {
   // useEffect(() => {
@@ -45,6 +46,8 @@ function App() {
         <Element name="contact">
           <Contact />
         </Element>
+
+        <MainSection />
       </section>
       <Footer />
     </main>

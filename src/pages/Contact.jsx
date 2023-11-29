@@ -31,6 +31,8 @@ const Contact = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          padding: "10px",
+          margin: "0 10vw",
         }}
       >
         {/* Contact Links */}
