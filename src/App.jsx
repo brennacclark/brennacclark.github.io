@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Spacer from "./components/Spacer";
 import ReactGA from "react-ga";
 
 function App() {
@@ -25,41 +26,21 @@ function App() {
     <main className="App">
       <Header />
       <section className="content-wrapper">
+
         <Element name="home">
           <Home />
         </Element>
-        <img
-          src={"/spacer.svg"}
-          alt="Breaker"
-          style={{
-            width: "100%",
-            transform: "scale(0.5)",
-          }}
-        />
+        <Spacer />
+
         <Element name="about">
           <About />
         </Element>
+        <Spacer />
 
-        <img
-          src={"/spacer.svg"}
-          alt="Breaker"
-          style={{
-            width: "100%",
-            transform: "scale(0.5)",
-          }}
-        />
         <Element name="projects">
           <Projects />
         </Element>
-
-        <img
-          src={"/spacer.svg"}
-          alt="Breaker"
-          style={{
-            width: "100%",
-            transform: "scale(0.5)",
-          }}
-        />
+        <Spacer />
 
         <Element name="contact">
           <Contact />

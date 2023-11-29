@@ -1,48 +1,57 @@
-/* About.css */
+/* Define CSS Variables for Common Colors and Values */
+:root {
+  --primary-color: rgba(255, 165, 79, 0.1); /* Adjust as needed */
+  --black-color: black;
+  --gray-color: gray;
+  --custom-link-color: #ffb778;
+  --noise-background: url("/noise.svg");
+}
+
+/* Global Styles */
 html,
 body {
   width: 100%;
-  background: linear-gradient(0deg, transparent, rgba(255, 165, 79, 0.1)),
-    url('/noise.svg');
+  background: linear-gradient(0deg, transparent, var(--primary-color)),
+    var(--noise-background);
 }
 
 body > div {
   height: 100%;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
-    background: linear-gradient(0deg, transparent, rgba(255, 165, 79, 0.1)),
-    url('/noise.svg');
+  background: linear-gradient(0deg, transparent, var(--primary-color)),
+    var(--noise-background);
 }
 
+/* Specific Component Styles */
 .App {
-  /* white to black linear noise gradient spanning from top to bottom */
-  background: linear-gradient(0deg, rgba(255, 165, 79, 0.1), transparent),
-    url('/noise.svg');
+  background: linear-gradient(0deg, var(--primary-color), transparent),
+    var(--noise-background);
+}
+
+.brand-text,
+.nav-item,
+i {
+  color: var(--black-color);
 }
 
 .brand-text {
   font-size: x-large;
   font-weight: bolder;
   text-decoration: none;
-  color: black;
 }
 
 .nav-item {
   text-decoration: none;
-  color: black;
 }
-
-/* .main-content {
-  padding-top: 5vh;
-} */
 
 .container {
   width: 100%;
   max-width: 1140px;
 }
 
-.home-bio {
-  font-size: larger;
+.home-bio,
+.vertical-timeline-element-subtitle {
   font-weight: bold;
 }
 
@@ -58,9 +67,9 @@ body > div {
 }
 
 .project-card .card-img-top {
-  object-fit: cover; /* Cover the whole width and height */
-  height: 25vh; /* Set to your preferred height */
-  width: 100%; /* Take the full width of the card */
+  object-fit: cover;
+  height: 25vh;
+  width: 100%;
 }
 
 .project-card .card-body .badge {
@@ -73,30 +82,26 @@ body > div {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
 }
 
-.custom-link {
-  color: #ffb778;
+.custom-link,
+.custom-link:hover {
+  color: var(--custom-link-color);
   text-decoration: none;
 }
 
 .custom-link:hover {
-  color: #ffb778;
   text-decoration: underline;
 }
 
 .noTextDecoration {
   text-decoration: none;
-  color: gray;
-}
-
-i {
-  color: black;
+  color: var(--gray-color);
 }
 
 i:hover {
-  color: gray;
+  color: var(--gray-color);
 }
 
-/* Media query for resizing
+/* Media Queries */
 @media screen and (max-width: 768px) {
   .heroContainer {
     flex-direction: column;
@@ -107,4 +112,4 @@ i:hover {
   .profileImage {
     padding: 0;
   }
-} */
+}
