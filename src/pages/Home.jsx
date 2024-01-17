@@ -1,6 +1,6 @@
 import React from "react";
 import ToggleButton from "@mui/material/ToggleButton";
-import "../styles/Home.css"; // Importing the CSS file
+import "../components/styles/Home.css"; // Importing the CSS file
 import { Link } from "react-scroll";
 
 const Home = () => {
