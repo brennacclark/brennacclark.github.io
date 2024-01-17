@@ -182,10 +182,10 @@ const CareerTimeline = () => {
           IBM Order Management, Littleton, MA
         </h5>
         <p>
-          Exhibited excellence in software engineering, improved database
-          efficiency for OMS, reduced resources for wiki storage, and installed
-          and tested OMS Add-on – Call Center Application and IBM Store
-          Engagement.
+          Exhibited excellence in software engineering, led automation
+          initiative, improved database efficiency for OMS, reduced resources
+          for wiki storage, and installed and tested OMS Add-on – Call Center
+          Application and IBM Store Engagement.
         </p>
       </VerticalTimelineElement>
 
@@ -282,14 +282,39 @@ const CareerTimeline = () => {
       >
         <h4 className="vertical-timeline-element-title">AV Technician</h4>
         <h5 className="vertical-timeline-element-subtitle">
-          AV Leads, Boston, MA
+          Independent Contractor
         </h5>
         <p>
-          Install, configure, and maintain computer systems and AV equipment.
-          Communicate technical issues and status updates to clients or team
-          members. Recommend upgrades or changes to improve system performance
-          and user experience. Conduct regular system tests to ensure quality and
-          reliability.
+          Installed, configured, and maintained computer systems and AV
+          equipment. Communicated technical issues and status updates to clients
+          or team members. Recommended upgrades or changes to improve system
+          performance and user experience. Conducted regular system tests to
+          ensure quality and reliability.
+        </p>
+      </VerticalTimelineElement>
+
+      {/* Digital Content Coordinator */}
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2024-present"
+        iconStyle={{ background: "#C3CB98", color: "#fff" }}
+        icon={
+          <div
+            style={{ marginTop: "1vh", textAlign: "center", fontSize: "30px" }}
+          >
+            <i className="fa fa-briefcase"></i>
+          </div>
+        }
+      >
+        <h4 className="vertical-timeline-element-title">AV Technician</h4>
+        <h5 className="vertical-timeline-element-subtitle">
+          Independent Contractor
+        </h5>
+        <p>
+          Lead the planning, creation, and delivery of digital content for local
+          businesses and artists. Reseponsibilites include developing and
+          deploying custom websites, creating social media and marketing
+          content, and analyzing user interactions and engagement.
         </p>
       </VerticalTimelineElement>
     </VerticalTimeline>
