@@ -1,40 +1,52 @@
+/* Define CSS variables for the light theme */
+:root {
+  --background-gradient-start: transparent;
+  --background-gradient-end: rgba(255, 165, 79, 0.1);
+  --background-image: url('/noise.svg');
+  --text-color: black;
+  --link-color: #ffb778;
+  --hovered-link-color: gray;
+  --brand-text-color: black;
+  --bio-text-color: black;
+  --timeline-subtitle-color: italic;
+  --box-shadow-color: rgba(0, 0, 0, 0.4);
+  --badge-color: gray;
+  --icon-color: black;
+  --hovered-icon-color: gray;
+}
+
 /* About.css */
 html,
 body {
   width: 100%;
-  background: linear-gradient(0deg, transparent, rgba(255, 165, 79, 0.1)),
-    url('/noise.svg');
+  background: linear-gradient(0deg, var(--background-gradient-start), var(--background-gradient-end)),
+    var(--background-image);
 }
 
 body > div {
   height: 100%;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
-    background: linear-gradient(0deg, transparent, rgba(255, 165, 79, 0.1)),
-    url('/noise.svg');
+  background: linear-gradient(0deg, var(--background-gradient-start), var(--background-gradient-end)),
+    var(--background-image);
 }
 
 .App {
-  /* white to black linear noise gradient spanning from top to bottom */
-  background: linear-gradient(0deg, rgba(255, 165, 79, 0.1), transparent),
-    url('/noise.svg');
+  background: linear-gradient(0deg, var(--background-gradient-end), transparent),
+    var(--background-image);
 }
 
 .brand-text {
   font-size: x-large;
   font-weight: bolder;
   text-decoration: none;
-  color: black;
+  color: var(--brand-text-color);
 }
 
 .nav-item {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
 }
-
-/* .main-content {
-  padding-top: 5vh;
-} */
 
 .container {
   width: 100%;
@@ -44,10 +56,11 @@ body > div {
 .home-bio {
   font-size: larger;
   font-weight: bold;
+  color: var(--bio-text-color);
 }
 
 .vertical-timeline-element-subtitle {
-  font-style: italic;
+  font-style: var(--timeline-subtitle-color);
 }
 
 .project-card {
@@ -58,53 +71,41 @@ body > div {
 }
 
 .project-card .card-img-top {
-  object-fit: cover; /* Cover the whole width and height */
-  height: 25vh; /* Set to your preferred height */
-  width: 100%; /* Take the full width of the card */
+  object-fit: cover;
+  height: 25vh;
+  width: 100%;
 }
 
 .project-card .card-body .badge {
   flex-grow: 1;
   margin-right: 10px;
   margin-bottom: 5px;
+  color: var(--badge-color);
 }
 
 .project-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 16px 0 var(--box-shadow-color);
 }
 
 .custom-link {
-  color: #ffb778;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 .custom-link:hover {
-  color: #ffb778;
+  color: var(--hovered-link-color);
   text-decoration: underline;
 }
 
 .noTextDecoration {
   text-decoration: none;
-  color: gray;
+  color: var(--hovered-icon-color);
 }
 
 i {
-  color: black;
+  color: var(--icon-color);
 }
 
 i:hover {
-  color: gray;
+  color: var(--hovered-icon-color);
 }
-
-/* Media query for resizing
-@media screen and (max-width: 768px) {
-  .heroContainer {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .textSection,
-  .profileImage {
-    padding: 0;
-  }
-} */
